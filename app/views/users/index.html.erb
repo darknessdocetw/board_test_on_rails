@@ -1,7 +1,8 @@
 <div>
 <% @users.each do |user| %>
-<%= user.name  %>
-<%= user.email %>
+<h1>歡迎!<%= user.name  %></h1>
+<th>
+<p>感謝你的註冊</p>
 <%= link_to("刪除",
                         user_path(user),
                         class: "btn btn-sm btn-default",
