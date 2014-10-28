@@ -1,0 +1,15 @@
+<div class="col-md-4 col-md-offset-4">
+<h1>註冊</h1>
+<%= simple_form_for @user do |f| %>
+
+    <%= f.input :name ,input_html: { class: "form-control"}%>
+
+    <%= f.input :email ,input_html: { class: "form-control"}%>
+    <%= f.input :password ,input_html: { class: "form-control"}%>
+    <%= f.input :password_confirmation ,input_html: { class: "form-control"}%>
+  <!-- <div class="form-actions"> -->
+    <%= f.submit "確認" , data: { disable_with: 'Loading...' }, class: "btn btn\
+-primary"%>
+  <!-- </div> -->
+<% end %>
+</div>
